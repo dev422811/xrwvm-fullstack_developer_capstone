@@ -10,6 +10,10 @@ urlpatterns = [
     # Serve your custom Home.html on root path
     path('', TemplateView.as_view(template_name="Home.html")),
 
+    # Static pages
+    path('about/', TemplateView.as_view(template_name="About.html")),
+    path('contact/', TemplateView.as_view(template_name="Contact.html")),
+
     # Routes handled by React SPA
     path('login/', TemplateView.as_view(template_name="index.html")),
     path('register/', TemplateView.as_view(template_name="index.html")),
